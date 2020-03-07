@@ -1,5 +1,4 @@
 import React, {useContext} from 'react';
-//set 5 import Cart Context
 import { CartContext } from '../contexts/CartContext'
 
 
@@ -10,7 +9,6 @@ import Item from './ShoppingCartItem';
 
 const ShoppingCart = () => {
 
-	//console.log("ShoppingCart props: ",props)
 	const { cart } = useContext(CartContext);
 
 	const getCartTotal = () => {
