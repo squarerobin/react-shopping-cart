@@ -29,7 +29,7 @@ function App() {
 				{/* Routes */}
 				<Route exact path="/">
 	{/* delete the props: products and addItem after step 4 and delete this comment*/}
-					<Products products={products} addItem={addItem} />
+					<Products />
 				</Route>
 
 				<Route path="/cart">
