@@ -35,7 +35,9 @@ function App() {
   return (
     <ProductContext.Provider value={{ products, addItem }}>
       <div className="App">
+
         <CartContext.Provider value={{ cart, removeItem }}>
+
           <Navigation />
 
           {/* Routes */}
@@ -43,9 +45,12 @@ function App() {
             {/* delete the props: products and addItem after step 4 and delete this comment*/}
             <Products />
           </Route>
-            <Route path="/cart">
-              <ShoppingCart />
-            </Route>
+
+
+          <Route path="/cart">
+            <ShoppingCart />
+          </Route>
+
         </CartContext.Provider>
       </div>
     </ProductContext.Provider>
