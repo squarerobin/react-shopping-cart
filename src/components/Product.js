@@ -1,5 +1,4 @@
-import React, {useContext} from 'react';
-
+import React from 'react';
 
 const Product = props => {
 	console.log("Product props: ",props)

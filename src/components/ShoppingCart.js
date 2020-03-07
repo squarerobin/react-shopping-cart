@@ -9,7 +9,7 @@ import Item from './ShoppingCartItem';
 
 const ShoppingCart = () => {
 
-	const { cart } = useContext(CartContext);
+	const { cart, removeItem} = useContext(CartContext);
 
 	const getCartTotal = () => {
 		return cart.reduce((acc, value) => {
@@ -18,17 +18,21 @@ const ShoppingCart = () => {
 	};
 
 	return (
-		<div className="shopping-cart">
-			{cart.map(item => (
-				<Item key={item.id} {...item} />
-			))}
+    <div className="shopping-cart">
+      {cart.map(item => (
+		<Item 
+		key={item.id} 
+		item={item} 
+		removeItem={removeItem} 
+		{...item} />
+      ))}
 
-			<div className="shopping-cart__checkout">
-				<p>Total: ${getCartTotal()}</p>
-				<button>Checkout</button>
-			</div>
-		</div>
-	);
+      <div className="shopping-cart__checkout">
+        <p>Total: ${getCartTotal()}</p>
+        <button>Checkout</button>
+      </div>
+    </div>
+  );
 };
 
 export default ShoppingCart;
