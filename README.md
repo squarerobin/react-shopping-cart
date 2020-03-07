@@ -1,5 +1,5 @@
 # Module Project: Context API - Shopping Cart
-
+DEPLOYED HERE: `https://react-shopping-cart-steel.now.sh`
 In this module you will take your newfound knowledge of `Context API` and refactor a e-commerce store to use `Context API` as well as extend the functionality of the application making it more robust!
 
 ## Instructions
