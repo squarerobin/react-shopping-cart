@@ -3,6 +3,9 @@ import React from 'react';
 // Components
 import Item from './ShoppingCartItem';
 
+//set 5 import Cart Context
+import { CartContext } from '../contexts/CartContext'
+
 const ShoppingCart = props => {
 
 	console.log("ShoppingCart props: ",props)
