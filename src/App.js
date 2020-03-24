@@ -27,7 +27,7 @@ function App() {
      // add the given item to the cart
      const newArray = [...cart] 
      newArray.pop(item)
-     console.log(newArray)
+     //console.log(newArray)
      
      setCart([...newArray])
    };
@@ -40,9 +40,7 @@ function App() {
 
           <Navigation />
 
-          {/* Routes */}
           <Route exact path="/">
-            {/* delete the props: products and addItem after step 4 and delete this comment*/}
             <Products />
           </Route>
 
