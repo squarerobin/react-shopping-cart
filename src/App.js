@@ -24,14 +24,14 @@ function App() {
     setCart([...cart, item]);
   };
 
-   const removeItem = item => {
-     // add the given item to the cart
-     const newArray = [...cart] 
-     newArray.pop(item)
-     //console.log(newArray)
-     
-     setCart([...newArray])
-   };
+  const removeItem = item => {
+    // add the given item to the cart
+    const newArray = [...cart] 
+    newArray.pop(item)
+    //console.log(newArray)
+
+    setCart([...newArray])
+  };
 
   return (
     <ProductContext.Provider value={{ products, addItem }}>
