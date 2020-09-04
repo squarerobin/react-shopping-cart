@@ -4,13 +4,14 @@ import data from "./data";
 
 // Context
 import { ProductContext } from "./contexts/ProductsContext";
+import { CartContext } from "./contexts/CartContext";
+// import { CartItemContext } from './contexts/CartItemContext'
 
 // Components
 import Navigation from "./components/Navigation";
 import Products from "./components/Products";
 import ShoppingCart from "./components/ShoppingCart";
-import { CartContext } from "./contexts/CartContext";
-// import { CartItemContext } from './contexts/CartItemContext'
+
 
 function App() {
   const [products] = useState(data);
